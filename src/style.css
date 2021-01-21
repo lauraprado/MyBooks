@@ -1,0 +1,375 @@
+/* ESTILOS GENÉRICOS */
+
+* {
+  margin: 0px;
+}
+
+body {
+  background-image: url(./image/portada_def.png);
+  background-size: cover;
+  font-family: Arial;
+}
+
+
+/* ESTILOS MENU */
+
+.menu {
+  background-color: #95a4ad; /*#e9ebf8*/
+  height: 3em;
+  width: 100%;
+  top: 0em;
+  /*position: fixed;
+  z-index: 222222;*/
+}
+
+.list_menu {
+  list-style: none;
+  padding-left: 3.5em;
+  padding-top: 0.6em;
+}
+
+.element_menu {
+  font-family: "Courgette";
+  color: #38393f;
+  list-style-type: none;
+  margin-right: 3em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.element_menu:hover {
+  color: #7d7f8c;
+}
+
+.menu .lupa_img {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 0.8%;
+  right: 2.5em;
+  color: #38393f;
+  opacity: 0.5;
+  cursor: pointer;
+  display: block;
+  float: right;
+}
+
+.fa_fa-bars {
+  height: 2em;
+  color: #957d95;
+}
+.menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .menu .element_menu:not(:first-child),
+  .menu .lupa_img {
+    display: none;
+  }
+  .menu a.icon {
+    float: left;
+    display: block;
+    color: #957d95;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu.responsive {
+    position: relative;
+    opacity: 1;
+    z-index: 111111;
+  }
+
+
+  .menu.responsive a.icon {
+    position: absolute;
+    display: block;
+    float: left;
+    padding-top: 0.3em;
+    color: #957d95;
+    opacity: 1;
+
+  }
+
+  .menu.responsive .lupa_img {
+    top: 0.5em;
+  }
+
+  .menu.responsive .lupa_img {
+    float: right;
+    display: block;
+    text-align: right;
+  }
+  .menu.responsive .element_menu {
+    float: none;
+    display: block;
+    text-align: left;
+    opacity: 1;
+    background-color: #95a4ad;
+    padding: 0em 0em 0.5em 1.3em;
+    margin: 0em 0em;
+  }
+
+  /*.card.responsive {
+    border: solid #655365 0.2em;
+    border-radius: 5px;
+    background-color: #dcecf2;
+    min-width: 10rem;
+    max-width: 18rem;
+    height: 10rem;
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 3.5em;
+    padding: 10px 10px;
+    vertical-align: top;
+    z-index: -1;
+  }*/
+}
+
+/* ESTILOS BÚSQUEDA */
+.main {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.search_input {
+  width: 45em;
+  height: 2.5em;
+  border: solid #655365;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  opacity: 0.8;
+}
+
+.search_type {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+
+/*label {
+
+  margin-right: 2em;
+}*/
+
+label {
+
+  font-family: "Courgette";
+  font-size: 2em;
+  top: -1.3em;
+  left: -1.2em;
+}
+
+
+.star {
+  color: #655365;
+  height: 3em;
+  cursor: pointer;
+}
+
+
+
+.star:hover {
+  color: #101012;
+}
+
+
+/* ESTILOS TARJETAS */
+.card {
+  border: solid #655365 0.2em;
+  border-radius: 0.5em;
+  opacity: 0.93;
+  background-color:  #B6A5B6;
+  width: 18em;
+  height: 43em;
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: 2.5em;
+  padding: 0.8em 0.8em;
+  vertical-align: bottom;
+}
+
+.bookImg {
+  height: 20em;
+  width: 15em;
+  padding: 0.7em 1.5em;
+}
+
+.link:hover {
+  opacity: 0.3;
+}
+
+.bookImg:hover {
+  opacity: 0.3;
+}
+
+.cardBody {
+  text-align: center;
+}
+
+.bookTitle {
+  font-size: 2em;
+  font-weight: bolder;
+  color:#101012;
+  padding-bottom: 0.5em;
+  max-height: 3em;
+  overflow: hidden;
+}
+
+.bookAuthor {
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding-bottom: 1em;
+  height: 1.4em;
+  overflow: hidden;
+  color: #202024;
+}
+
+.bookDescrip {
+  height: 9em;
+  overflow: hidden;
+  color: #202024;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.more {
+  font-size: 1.5em;
+  font-family: "Courgette";
+  color: #38393f;
+}
+.more:hover {
+  cursor: pointer;
+  color: #7d7f8c;
+}
+
+.info {
+  border: solid #7d7f8c 0.2em;
+  border-radius: 1em;
+  background-color: #aeb2b9;
+  min-height: 5rem;
+  max-height: 55rem;
+  width: 75%;
+  position: absolute;
+  padding: 1.3em 1.3em;
+  font-family: Arial;
+}
+
+
+
+/*.card_active {
+  border: solid #655365 0.2em;
+  border-radius: 1em;
+  background-color:  #95a4ad;
+  width: 87.5em;
+  height: 42rem;
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: 3.5em;
+  padding: 10px 10px;
+  vertical-align: top;
+}
+
+.bookImg_active {
+  height: 300px;
+  padding-top: 25px;
+  padding-left: 34em;
+  display: hidden;
+}
+
+.closer {
+  display: none;
+}*/
+
+
+
+/*.wishlist {
+  margin: 3em auto;
+  background-color: #B6A5B6;
+  width: 75%;
+  border: solid #655365 0.2em;
+  border-radius: 0.5em;
+}
+
+.liWish {
+  list-style-type: circle;
+  padding: 0.5em 1em;
+
+}*/
+
+
+.tableWish {
+  margin: 3em auto;
+  width: 60%;
+  background-color: #B6A5B6;
+  border: solid #655365 0.2em;
+  border-radius: 0.5em;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid #101012;
+  width: 15em;
+  color: #38393f;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Courgette";
+}
+
+.trWish {
+  color: #202024;
+  font-family: Arial;
+  padding: 15px;
+}
+
+th > a {
+  text-decoration: none;
+  font-family: Arial;
+  color: #202024;
+}
+
+a:visited,
+a:hover {
+  color: #202024;
+}
+
+/*ESTILOS VENTANA MODAL*/
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-top: 10px solid #58abb7;
+  width: 60%;
+}
+
+.modalContainer .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
