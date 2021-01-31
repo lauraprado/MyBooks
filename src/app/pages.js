@@ -106,11 +106,8 @@ function clearCards() {
 }
 
 function clearWish () {
-    document.querySelectorAll('table').forEach(e => e.remove())
-}
-
-function showWish () {
-
+    document.querySelectorAll('div.error').forEach(e=> e.remove());
+    console.log('borrar');
 }
 
 
